@@ -1,4 +1,5 @@
 #include<stdio.h>
+#define _USE_MATH_DEFINES
 #include<math.h>
 
 double cal(int x1, int y1, int x2, int y2) {
@@ -9,10 +10,10 @@ double cal(int x1, int y1, int x2, int y2) {
     return result;
 }
 
-double circle(int num) {
+double circle(double num) {
     double result;
 
-    result = num * num * 3.14;
+    result = num * num * M_PI;
     return result;
 }
 
