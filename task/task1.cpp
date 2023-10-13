@@ -5,7 +5,7 @@
 double cal(int x1, int y1, int x2, int y2) {
     double temp, result;
 
-    temp = sqrt((abs(x2) - abs(x1)) * (abs(x2) - abs(x1)) + (abs(y2) - abs(y1)) * (abs(y2) - abs(y1)));
+    temp = sqrt((x2-x1) * (x2-x1) + (y2 - y1) * (y2 - y1));
     result = temp / 2.0;
     return result;
 }
